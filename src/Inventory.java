@@ -37,9 +37,13 @@ public class Inventory extends JFrame {
         inputPanel.setBackground(new Color(241, 231, 202));
 
         JButton addButton = new JButton("Add");
+        addButton.setBackground(new Color(255, 255, 255));
         JButton updateButton = new JButton("Update");
+        updateButton.setBackground(new Color(255, 255, 255));
         JButton deleteButton = new JButton("Delete");
+        deleteButton.setBackground(new Color(255, 255, 255));
         JButton backButton = new JButton("Back");
+        backButton.setBackground(new Color(255, 255, 255));
 
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(addButton);
@@ -179,9 +183,5 @@ public class Inventory extends JFrame {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        new Inventory();
     }
 }

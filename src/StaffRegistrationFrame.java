@@ -223,8 +223,4 @@ public class StaffRegistrationFrame extends JFrame {
             JOptionPane.showMessageDialog(this, "Error loading staff data: " + ex.getMessage());
         }
     }
-
-    public static void main(String[] args) {
-        new StaffRegistrationFrame();
-    }
 }

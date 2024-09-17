@@ -30,7 +30,7 @@ public class OrderSummary extends JFrame {
         summaryPanel.add(new JLabel("Total Amount: $" + String.format("%.2f", totalAmount)));
 
         JPanel userDetailsPanel = new JPanel();
-        userDetailsPanel.setLayout(new GridLayout(4, 2)); // Change to 4 rows, 2 columns
+        userDetailsPanel.setLayout(new GridLayout(4, 2));
         userDetailsPanel.setBackground(new Color(241, 231, 202));
         userDetailsPanel.add(new JLabel("Name:"));
         JTextField nameField = new JTextField();
@@ -38,15 +38,17 @@ public class OrderSummary extends JFrame {
         userDetailsPanel.add(new JLabel("Address:"));
         JTextField addressField = new JTextField();
         userDetailsPanel.add(addressField);
-        userDetailsPanel.add(new JLabel("Phone Number:")); // Added phone number label
-        JTextField phoneField = new JTextField();           // Added phone number text field
+        userDetailsPanel.add(new JLabel("Phone Number:"));
+        JTextField phoneField = new JTextField();
         userDetailsPanel.add(phoneField);
 
         JPanel buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout());
 
         JButton orderButton = new JButton("Order");
+        orderButton.setBackground(new Color(255, 255, 255));
         JButton exitButton = new JButton("Exit");
+        exitButton.setBackground(new Color(255, 255, 255));
         buttonPanel.add(orderButton);
         buttonPanel.add(exitButton);
 
