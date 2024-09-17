@@ -63,7 +63,9 @@ public class Menu extends JFrame {
         JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new FlowLayout());
         JButton completeButton = new JButton("Complete Reservation");
+        completeButton.setBackground(new Color(255, 255, 255));
         JButton exitButton = new JButton("Exit");
+        exitButton.setBackground(new Color(255, 255, 255));
         buttonsPanel.add(completeButton);
         buttonsPanel.add(exitButton);
         mainPanel.add(buttonsPanel, BorderLayout.SOUTH);

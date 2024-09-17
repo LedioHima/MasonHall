@@ -100,8 +100,4 @@ public class WaiterOrders extends JFrame {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args) {
-        new WaiterOrders();
-    }
 }

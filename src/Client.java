@@ -141,7 +141,9 @@ public class Client {
                 reservationPanel.add(peopleComboBox);
 
                 JButton makeReservationButton = new JButton("Make Reservation");
+                makeReservationButton.setBackground(new Color(255, 255, 255));
                 JButton cancelButton = new JButton("Cancel");
+                cancelButton.setBackground(new Color(255, 255, 255));
 
                 makeReservationButton.addActionListener(new ActionListener() {
                     @Override
