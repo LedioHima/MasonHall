@@ -37,11 +37,9 @@ public class AttendanceFrame extends JFrame {
                 int id = rs.getInt("id");
                 String username = rs.getString("username");
 
-                // Use Timestamp to include both date and time
                 Timestamp clockIn = rs.getTimestamp("clock_in");
                 Timestamp clockOut = rs.getTimestamp("clock_out");
 
-                // Convert the Timestamp to a readable format (optional)
                 String clockInStr = (clockIn != null) ? clockIn.toString() : "Null";
                 String clockOutStr = (clockOut != null) ? clockOut.toString() : "Null";
 
