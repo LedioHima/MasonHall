@@ -59,7 +59,6 @@ public class Menu extends JFrame {
         addDish("Crème Brûlée", "src/creme_brulee.png", "Creamy custard topped with a caramelized sugar crust.", 7.99);
         addDish("Apple Pie", "src/apple_pie.png", "Traditional apple pie with a flaky crust and cinnamon-spiced apples.", 6.99);
 
-        // Buttons panel
         JPanel buttonsPanel = new JPanel();
         buttonsPanel.setLayout(new FlowLayout());
         JButton completeButton = new JButton("Complete Reservation");
@@ -70,7 +69,6 @@ public class Menu extends JFrame {
         buttonsPanel.add(exitButton);
         mainPanel.add(buttonsPanel, BorderLayout.SOUTH);
 
-        // Button actions
         completeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -94,7 +92,6 @@ public class Menu extends JFrame {
                     }
                 }
 
-                // Open the OrderSummary frame
                 OrderSummary orderSummary = new OrderSummary(selectedDishes, totalAmount);
                 orderSummary.setVisible(true);
             }
@@ -113,7 +110,7 @@ public class Menu extends JFrame {
     private void addSectionHeader(String title) {
         JLabel headerLabel = new JLabel(title);
         headerLabel.setFont(new Font("Segoe UI", Font.BOLD, 20));
-        headerLabel.setForeground(new Color(101, 67, 33)); // Brown color
+        headerLabel.setForeground(new Color(101, 67, 33));
         headerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         dishesPanel.add(headerLabel);
     }
@@ -123,13 +120,11 @@ public class Menu extends JFrame {
         dishPanel.setLayout(new BorderLayout());
         dishPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
 
-        // Dish image
         ImageIcon dishImageIcon = new ImageIcon(imagePath);
         Image dishImage = dishImageIcon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
         JLabel imageLabel = new JLabel(new ImageIcon(dishImage));
         dishPanel.add(imageLabel, BorderLayout.WEST);
 
-        // Dish details
         JPanel detailsPanel = new JPanel();
         detailsPanel.setLayout(new GridLayout(3, 1));
         detailsPanel.setBackground(new Color(241, 231, 202));
@@ -144,7 +139,6 @@ public class Menu extends JFrame {
         detailsPanel.add(priceLabel);
         dishPanel.add(detailsPanel, BorderLayout.CENTER);
 
-        // Quantity spinner
         SpinnerModel spinnerModel = new SpinnerNumberModel(0, 0, 10, 1);
         JSpinner quantitySpinner = new JSpinner(spinnerModel);
         dishPanel.add(quantitySpinner, BorderLayout.EAST);

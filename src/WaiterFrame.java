@@ -50,8 +50,8 @@ public class WaiterFrame extends JFrame {
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                dispose(); // Close the current KitchenStaff frame
-                new StaffLogin(); // Open the StaffLogin frame
+                dispose();
+                new StaffLogin();
             }
         });
 

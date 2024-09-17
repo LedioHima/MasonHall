@@ -75,7 +75,7 @@ public class KitchenStaff extends JFrame {
         add(ordersScrollPane, BorderLayout.NORTH);
         add(orderDetailsScrollPane, BorderLayout.CENTER);
 
-        JPanel buttonPanel = new JPanel(); // Panel to hold buttons
+        JPanel buttonPanel = new JPanel();
         buttonPanel.add(updateStatusButton);
         buttonPanel.add(backButton);
         add(buttonPanel, BorderLayout.SOUTH);
